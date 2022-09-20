@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark Mode Functionality</title>
+    <link rel="stylesheet" href="utils/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="Fonts/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="Fonts/css/all.css" />
+    <link rel="stylesheet" href="Styling/index.css" />
+  </head>
+
+  <body>
+    <div class="cotainer text-end" id="div-dark-mode-text">
+      <span id="txt-dark-mode">Dark Mode</span>
+      <i class="fa-solid fa-cloud-moon color" id="toggle-icon"></i>
+      <div
+        class="position-relative form-check form-switch"
+        id="div-dark-mode-toggle"
+      >
+        <input
+          type="checkbox"
+          class="form-check-input position-absolute top-0 end-0"
+          id="btn-toggle"
+        />
+      </div>
+    </div>
+
+    <div class="container text-end mt-5" id="div-error-main">
+      <div class="conatiner text-center" id="div-error-sub-main">
+        <p class="text-white mt-3" id="txt-error-message">
+          <b>Error message displays here</b>&nbsp;
+          <img
+            src="images/angry3.gif"
+            class="rounded-circle"
+            width="30px"
+            height="30px"
+          />
+        </p>
+      </div>
+    </div>
+
+    <div class="container mt-2" id="div-main">
+      <br />
+      <div class="row" id="div-submain">
+        <div class="col-sm">
+          <div class="container text-center mb-3">
+            <h4>Dark Mode Functionality</h4>
+          </div>
+          <div class="container mb-3" id="div-password">
+            <div class="input-group">
+              <input type="text" class="form-control" id="txt-password" />
+              <button
+                class="btn btn-primary input-group-text"
+                id="btn-copy-paste"
+              >
+                <i class="fa-solid fa-paste"></i>
+              </button>
+            </div>
+          </div>
+          <div class="container mb-3" id="div-password-length">
+            Password length&nbsp;&nbsp;&nbsp;<input
+              type="number"
+              class="form-control-sm"
+              id="txt-password-length"
+            />
+          </div>
+          <div class="container mb-3" id="div-uppercase">
+            Include uppercase letters&nbsp;&nbsp;&nbsp;<input
+              type="checkbox"
+              id="chk-uppercase"
+              class="form-check-input"
+            />
+          </div>
+          <div class="container mb-3" id="div-lowercase">
+            Include lowercase letters&nbsp;&nbsp;&nbsp;<input
+              type="checkbox"
+              id="chk-lowercase"
+              class="form-check-input"
+            />
+          </div>
+          <div class="container mb-3" id="div-numbers">
+            Include numbers&nbsp;&nbsp;&nbsp;<input
+              type="checkbox"
+              id="chk-numbers"
+              class="form-check-input"
+            />
+          </div>
+          <div class="container mb-0" id="div-symbols">
+            Include symbols&nbsp;&nbsp;&nbsp;<input
+              type="checkbox"
+              id="chk-symbols"
+              class="form-check-input"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="container text-end mt-2">
+        <button class="btn btn-primary btn-lg" id="btn-generate">
+          Generate Password&nbsp;&nbsp;<i class="fas fa-key"></i>
+        </button>
+      </div>
+      <br />
+    </div>
+  </body>
+
+  <script src="Js/index.js"></script>
+</html>
